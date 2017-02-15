@@ -12,7 +12,7 @@ $(document).ready(function () {
     tel = $('#user_tel').val();
     var name = '<h1>Hi, my name is ' + Fname + ' ' + Lname + '</h1>';
     var info = '<p>' + desc + '</p>';
-    var interested = '<p>If you\'re interested in a date, you can email me at <a href="mailto:' + email + 'target="_blank">' + email + '</a>';
+    var interested = '<p>If you\'re interested in a date, you can email me at <a href="mailto:' + email + '" target="_blank">' + email + '</a> ';
     var interested2 = 'or give me a call at <a href="tel:' + tel + '" target="_blank">' + tel + '</a>.</p>';
     var all = name + info + interested + interested2;
     $('#preview').html(all);
