@@ -1,24 +1,24 @@
-var FirstNameInput = document.getElementById('FirstName')
-var LastNameInput = document.getElementById('LastName')
-var DescriptionInput = document.getElementById('Description')
-var EmailInput = document.getElementById('UserEmail')
-var TelInput = document.getElementById('UserTel')
-var UpdateText = function () {
-  var FirstName = FirstNameInput.value
-  var LastName = LastNameInput.value
-  var Description = DescriptionInput.value
-  var Tel = TelInput.value
-  var Email = EmailInput.value
-  var FullName = '<h1>Hi, my name is ' + FirstName + ' ' + LastName + '</h1>'
-  var DescriptionText = '<p>' + Description + '</p>'
-  var EmailText = '<p>If you\'re interested in a date, you can email me at <a href="mailto:' + Email + '" target="_blank">' + Email + '</a> '
-  var TelText = 'or give me a call at <a href="tel:' + Tel + '" target="_blank">' + Tel + '</a>.</p>'
-  var FullProfileText = FullName + DescriptionText + EmailText + TelText
-  document.getElementById('preview').innerHTML = FullProfileText
-  document.getElementById('raw').textContent = FullProfileText
+var firstNameInput = document.getElementById('FirstName')
+var lastNameInput = document.getElementById('LastName')
+var descriptionInput = document.getElementById('Description')
+var emailInput = document.getElementById('UserEmail')
+var telInput = document.getElementById('UserTel')
+var updateText = function () {
+  var firstName = firstNameInput.value
+  var lastName = lastNameInput.value
+  var description = descriptionInput.value
+  var tel = telInput.value
+  var email = emailInput.value
+  var fullName = '<h1>Hi, my name is ' + firstName + ' ' + lastName + '</h1>'
+  var descriptionText = '<p>' + description + '</p>'
+  var emailText = '<p>If you\'re interested in a date, you can email me at <a href="mailto:' + email + '" target="_blank">' + email + '</a> '
+  var telText = 'or give me a call at <a href="tel:' + tel + '" target="_blank">' + tel + '</a>.</p>'
+  var fullProfileText = fullName + descriptionText + emailText + telText
+  document.getElementById('preview').innerHTML = fullProfileText
+  document.getElementById('raw').textContent = fullProfileText
 }
-FirstNameInput.addEventListener('input', UpdateText)
-LastNameInput.addEventListener('input', UpdateText)
-DescriptionInput.addEventListener('input', UpdateText)
-TelInput.addEventListener('input', UpdateText)
-EmailInput.addEventListener('input', UpdateText)
+firstNameInput.addEventListener('input', updateText)
+lastNameInput.addEventListener('input', updateText)
+descriptionInput.addEventListener('input', updateText)
+telInput.addEventListener('input', updateText)
+emailInput.addEventListener('input', updateText)
