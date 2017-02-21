@@ -13,9 +13,9 @@ var UpdateText = function () {
   var DescriptionText = '<p>' + Description + '</p>'
   var EmailText = '<p>If you\'re interested in a date, you can email me at <a href="mailto:' + Email + '" target="_blank">' + Email + '</a> '
   var TelText = 'or give me a call at <a href="tel:' + Tel + '" target="_blank">' + Tel + '</a>.</p>'
-  var All = FullName + DescriptionText + EmailText + TelText
-  document.getElementById('preview').innerHTML = All
-  document.getElementById('raw').textContent = All
+  var FullProfileText = FullName + DescriptionText + EmailText + TelText
+  document.getElementById('preview').innerHTML = FullProfileText
+  document.getElementById('raw').textContent = FullProfileText
 }
 FirstNameInput.addEventListener('input', UpdateText)
 LastNameInput.addEventListener('input', UpdateText)
